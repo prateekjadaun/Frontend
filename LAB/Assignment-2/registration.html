@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .form {
+            width: 450px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+        }
+
+        .option {
+            margin: 8px 0;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <!-- Text input -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Radio buttons -->
+        <label>Gender:</label>
+
+        <div class="option">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label>
+
+        <div class="option">
+            <input type="checkbox" id="coding" name="hobby" value="Coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox" id="reading" name="hobby" value="Reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" id="sports" name="hobby" value="Sports">
+            <label for="sports">Sports</label>
+        </div>
+
+        <!-- Dropdown -->
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course">
+            <option value="">-- Select Course --</option>
+            <option value="cse">B.Tech CSE</option>
+            <option value="aiml">B.Tech CSE (AI & ML)</option>
+            <option value="ece">B.Tech ECE</option>
+            <option value="it">B.Tech IT</option>
+        </select>
+
+        <!-- Submit button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</div>
+
+</body>
+</html>
